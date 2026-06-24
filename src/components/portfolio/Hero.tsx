@@ -69,27 +69,28 @@ export function Hero() {
         </div>
 
         <div className="reveal flex flex-wrap items-center justify-center gap-3">
-          <a
-            href="#about"
+          <Link
+            to="/about"
             className="inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-5 py-2.5 text-sm font-medium hover:bg-card transition-all"
           >
             About Me
-          </a>
+          </Link>
           <a
             href={resumeAsset.url}
             download="Vinay_KN_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:-translate-y-0.5 transition-all"
+            className="inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:-translate-y-0.5 transition-all"
           >
             <Download size={14} /> Resume
           </a>
-          <a
-            href="#contact"
+          <Link
+            to="/about"
+            hash="contact"
             className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-5 py-2.5 text-sm font-medium shadow-glow hover:-translate-y-0.5 transition-all"
           >
             <Calendar size={14} /> Get in touch
-          </a>
+          </Link>
         </div>
       </div>
     </section>
