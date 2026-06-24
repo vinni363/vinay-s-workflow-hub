@@ -2,12 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/portfolio/Navbar";
 import { ScrollProgress } from "@/components/portfolio/ScrollProgress";
 import { Hero } from "@/components/portfolio/Hero";
-import { About } from "@/components/portfolio/About";
-import { Skills } from "@/components/portfolio/Skills";
-import { Experience } from "@/components/portfolio/Experience";
-import { Projects } from "@/components/portfolio/Projects";
-import { Certifications } from "@/components/portfolio/Certifications";
-import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
 import { useReveal } from "@/hooks/use-reveal";
 
@@ -20,7 +14,7 @@ export const Route = createFileRoute("/")({
         content:
           "Vinay K N is a Systems Engineer specializing in K2 workflow automation, BPM, SQL Server, and ServiceNow. Building reliable enterprise automation that scales.",
       },
-      { property: "og:title", content: "Vinay K N — Systems Engineer | Workflow Automation & BPM" },
+      { property: "og:title", content: "Vinay K N — Systems Engineer" },
       {
         property: "og:description",
         content:
@@ -48,12 +42,6 @@ function Index() {
       <Navbar />
       <main>
         <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Certifications />
-        <Contact />
       </main>
       <Footer />
     </>
