@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { Calendar, Download, Github, Linkedin, Mail } from "lucide-react";
 import resumeAsset from "@/assets/resume.pdf.asset.json";
 import avatar from "@/assets/vinay-headshot.png.asset.json";
